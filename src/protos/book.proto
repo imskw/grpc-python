@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Book {
+    uint32 id = 1;
+    string title = 2;
+    enum BookType {
+        NOVEL = 0;
+        COMIC = 1;
+        BUSINESS = 2;
+        TECHNOLOGY = 3;
+    }
+    BookType book_type = 3;
+}

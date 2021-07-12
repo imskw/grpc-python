@@ -1,0 +1,12 @@
+syntax = "proto3";
+package protos;
+import "protos/book.proto";
+
+message GetBookParam {
+    uint32 id = 1;
+}
+
+service BookManager {
+    // ユーザー情報を取得する
+    rpc get (GetBookParam) returns (Book) {}
+}
