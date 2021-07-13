@@ -9,3 +9,5 @@ WORKDIR /workspace
 
 RUN python -m grpc_tools.protoc -I./ --python_out=./ ./protos/book.proto
 RUN python -m grpc_tools.protoc -I./ --python_out=./ --grpc_python_out=./ ./protos/book_interface.proto
+
+CMD ["python", "grpc_app.py"]

@@ -7,7 +7,7 @@ from protos import book_pb2, book_interface_pb2, book_interface_pb2_grpc
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('book_id', type=int)
+    parser.add_argument('--book_id', type=int, required=True)
 
     args = parser.parse_args()
 

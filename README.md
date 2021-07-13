@@ -13,5 +13,5 @@ python grpc_app.py
 
 ## Run API Client
 ```bash
-python grpc_client.py 2
+python grpc_client.py --book_id=2
 ```
